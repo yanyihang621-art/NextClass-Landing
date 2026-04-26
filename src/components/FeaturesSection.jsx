@@ -44,7 +44,7 @@ export default function FeaturesSection() {
           {features.map(({ icon: Icon, title, description }, index) => (
             <div
               key={title}
-              className="feature-card group relative w-full bg-white/80 backdrop-blur-sm rounded-2xl px-6 py-12 lg:px-8 lg:py-16 shadow-sm border border-gray-100/80 hover:shadow-xl hover:border-purple-100/60 flex flex-col items-center text-center cursor-default"
+              className="feature-card group relative w-full h-full bg-white/80 backdrop-blur-sm rounded-2xl px-6 py-20 lg:px-8 lg:py-24 shadow-sm border border-gray-100/80 hover:shadow-xl hover:border-purple-100/60 flex flex-col items-center text-center cursor-default"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Hover glow accent */}
