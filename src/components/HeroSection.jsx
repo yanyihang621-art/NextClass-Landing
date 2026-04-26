@@ -15,11 +15,11 @@ export default function HeroSection() {
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 lg:space-y-10 w-full">
 
             {/* H1 */}
-            <h1 className="fade-in-up delay-1 space-y-3 lg:space-y-4 w-full">
-              <span className="block text-5xl sm:text-6xl lg:text-8xl font-black tracking-tighter bg-gradient-to-r from-purple-600 via-violet-600 to-indigo-600 text-transparent bg-clip-text pb-1 lg:pb-2 leading-none mx-auto lg:mx-0">
+            <h1 className="fade-in-up delay-1 space-y-4 lg:space-y-4 w-full">
+              <span className="block text-4xl sm:text-5xl lg:text-8xl font-black tracking-tighter bg-gradient-to-r from-purple-600 via-violet-600 to-indigo-600 text-transparent bg-clip-text pb-1 lg:pb-2 leading-normal lg:leading-none mx-auto lg:mx-0">
                 NextClass
               </span>
-              <span className="block text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold text-slate-800 leading-tight mx-auto lg:mx-0">
+              <span className="block text-2xl sm:text-3xl lg:text-[2.75rem] font-extrabold text-slate-800 leading-[1.6] lg:leading-tight mx-auto lg:mx-0">
                 你的专属课表
                 <br />
                 与教务管家
