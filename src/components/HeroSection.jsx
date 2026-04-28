@@ -34,7 +34,8 @@ export default function HeroSection() {
             {/* CTA */}
             <div className="fade-in-up delay-3 flex flex-col items-center lg:items-start gap-4 lg:gap-5 pt-2 lg:pt-3 w-full">
               <a
-                href="#download"
+                href="/NextClass.apk"
+                download="NextClass.apk"
                 id="btn-download-hero"
                 className="glow-btn pulse-ring inline-flex items-center justify-center gap-2 px-6 py-2.5 lg:px-8 lg:py-3 text-sm lg:text-base font-bold text-white rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 shadow-xl shadow-purple-500/30 transition-all duration-300 w-auto"
               >

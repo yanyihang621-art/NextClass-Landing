@@ -43,7 +43,8 @@ export default function Navbar() {
             版本日志
           </a>
           <a
-            href="#download"
+            href="/NextClass.apk"
+            download="NextClass.apk"
             id="btn-download-nav"
             className="inline-flex items-center justify-center gap-1.5 px-5 py-2 lg:px-6 lg:py-2.5 text-[11px] lg:text-sm font-bold text-white rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 shadow-md shadow-purple-500/25 hover:shadow-lg hover:shadow-purple-500/35 transition-all duration-300 hover:-translate-y-0.5 w-full lg:w-auto"
           >
