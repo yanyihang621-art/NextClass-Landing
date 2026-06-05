@@ -14,7 +14,7 @@ export default function App() {
       </div>
 
       <Navbar />
-      <main className="pt-28 lg:pt-20">
+      <main>
         <HeroSection />
         <FeaturesSection />
       </main>
