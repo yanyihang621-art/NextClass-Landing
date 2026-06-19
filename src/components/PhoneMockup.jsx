@@ -15,20 +15,20 @@ export default function PhoneMockup() {
   ]
 
   // [col, row, span, colorIndex, courseName, location, teacher]
-  // All names are pseudonymous
   const courses = [
-    [0, 0, 2, 0, '文献查阅\n与科技写作', '教学楼A\n102室', '李华'],
-    [0, 2, 4, 0, '高等数\n学A(II)', '教学楼A\n201室', '常青'],
-    [0, 6, 2, 4, '数据结构\n与算法', '教学楼B\n305室', '王磊'],
-    [1, 2, 2, 2, '大学物理\nB(I)', '教学楼D\n阶-101', '邱明红'],
-    [1, 6, 2, 3, '体育(II)', '体育馆\n篮球场', '柴志龙'],
-    [1, 8, 2, 0, '近代史\n纲要', '教学楼A\n108室', '周文'],
-    [2, 2, 2, 0, '高等数\n学A(II)', '教学楼A\n201室', '常青'],
-    [2, 8, 2, 0, '物理实\n验(I)', '实验楼\n203室', '张颖'],
-    [3, 2, 2, 4, '大学英\n语3', '教学楼D\n310室', '许梦圆'],
-    [3, 6, 2, 2, 'C语言程\n序设计', '教学楼B\n305室', '刘颖冰'],
-    [4, 2, 2, 1, '大学物\n理B(I)', '教学楼D\n阶-101', '邱明红'],
-    [5, 2, 3, 5, '人工智能\n导论', '网络\n课程', '赵远'],
+    [0, 0, 2, 0, '高等数学\nA(I)', '主楼 301', '张德华'],
+    [0, 2, 2, 4, '思想道德\n与法治', '一教 101', '李红梅'],
+    [0, 5, 2, 2, '大学英语\n(III)', '外语楼 204', '王雅琴'],
+    [1, 2, 2, 1, '大学物理\nB(I)', '物理解析楼', '陈静'],
+    [1, 5, 2, 3, '体育(II)\n羽毛球', '羽毛球馆', '刘建国'],
+    [1, 7, 2, 0, '中国近代史\n纲要', '一教 208', '赵树理'],
+    [2, 0, 2, 5, '线性代数', '主楼 202', '钱思源'],
+    [2, 2, 2, 0, '高等数学\nA(I)', '主楼 301', '张德华'],
+    [2, 9, 2, 4, '形势与政策', '大报告厅', '孙志远'],
+    [3, 2, 2, 2, '大学英语\n(III)', '外语楼 204', '王雅琴'],
+    [3, 5, 2, 5, '数据结构\n与算法', '信科楼 305', '吴明理'],
+    [4, 0, 2, 1, '大学物理\nB(I)', '物理解析楼', '陈静'],
+    [4, 2, 2, 3, 'Python\n程序设计', '信科楼 201', '郑海涛'],
   ]
 
   const days = ['一', '二', '三', '四', '五', '六', '日']
@@ -40,10 +40,12 @@ export default function PhoneMockup() {
     ['3', '09:50', '10:35'],
     ['4', '10:45', '11:30'],
     ['5', '11:35', '12:20'],
-    ['6', '13:00', '13:45'],
-    ['7', '13:50', '14:35'],
-    ['8', '14:45', '15:30'],
-    ['9', '15:40', '16:25'],
+    ['6', '13:30', '14:15'],
+    ['7', '14:20', '15:05'],
+    ['8', '15:20', '16:05'],
+    ['9', '16:10', '16:55'],
+    ['10', '19:00', '19:45'],
+    ['11', '19:50', '20:35'],
   ]
 
   // Cell height — tuned to fit 9 periods in the visible area
@@ -95,20 +97,18 @@ export default function PhoneMockup() {
               return (
                 <div key={d} className="flex flex-col items-center gap-0.5 py-0.5">
                   <span
-                    className={`text-[10px] font-medium ${
-                      isToday ? 'text-purple-600' : isWeekend ? 'text-rose-400' : 'text-slate-400'
-                    }`}
+                    className={`text-[10px] font-medium ${isToday ? 'text-purple-600' : isWeekend ? 'text-rose-400' : 'text-slate-400'
+                      }`}
                   >
                     {d}
                   </span>
                   <div
-                    className={`w-7 h-7 flex items-center justify-center rounded-full text-[12px] font-bold ${
-                      isToday
+                    className={`w-7 h-7 flex items-center justify-center rounded-full text-[12px] font-bold ${isToday
                         ? 'bg-purple-600 text-white shadow-md shadow-purple-300'
                         : isWeekend
                           ? 'text-rose-400'
                           : 'text-slate-600'
-                    }`}
+                      }`}
                   >
                     {dates[i]}
                   </div>
