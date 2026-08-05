@@ -2,7 +2,7 @@
 
 /* ===== Custom Design Tokens ===== */
 @theme {
-  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-sans: 'PingFang SC', 'PingFang TC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
 }
 
 /* ===== Global Styles ===== */
@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'PingFang SC', 'PingFang TC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
   background-color: #f8fafc;
   color: #0f172a;
   overflow-x: hidden;
@@ -48,4 +48,3 @@ body {
 .phone-float:hover {
   animation-play-state: paused;
 }
-
