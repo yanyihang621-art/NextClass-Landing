@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import FeaturesSection from './components/FeaturesSection'
+import ChangelogSection from './components/ChangelogSection'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
       <main>
         <HeroSection />
         <FeaturesSection />
+        <ChangelogSection />
       </main>
       {/* Spacer — guaranteed breathing room before footer */}
       <div aria-hidden="true" style={{ height: '4rem' }} />
@@ -18,3 +20,4 @@ export default function App() {
     </div>
   )
 }
+
